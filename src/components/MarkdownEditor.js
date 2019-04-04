@@ -13,6 +13,11 @@ export default class MarkdownEditor extends Component {
     handleChange = (e) => {
         this.setState({ value: e.target.value })
     }
+    
+    getRawMarkup() {
+      const md = new Remarkable()
+      return {__html: md.render(this.state.value)}
+    }
   
     render() {
       return (
@@ -22,7 +27,7 @@ export default class MarkdownEditor extends Component {
           <p>Enter some markdown</p>
           <textarea id="markdown-content" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
           <h2>Output</h2>
-          <div className="content" />
+          <div className="content" dangerouslySetInnerHTML={this.getRawMarkup()} />
         </div>
       );
     }
