@@ -9,6 +9,10 @@ export default class MarkdownEditor extends Component {
           value: '**Hello World!**'
       }
     }
+    
+    handleChange = (e) => {
+        this.setState({ value: e.target.value })
+    }
   
     render() {
       return (
@@ -16,7 +20,7 @@ export default class MarkdownEditor extends Component {
           <h1>Markdown Editor</h1>
           <h2>Input</h2>
           <p>Enter some markdown</p>
-          <textarea id="markdown-content" defaultValue={this.state.value}></textarea>
+          <textarea id="markdown-content" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
           <h2>Output</h2>
           <div className="content" />
         </div>
