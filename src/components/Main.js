@@ -6,8 +6,8 @@ export default class Main extends Component {
   
     render() {
       return (
-        <main id="wrap">
-            <section id="content" className="clearfix">
+        <main className="wrap">
+            <section className="content clearfix">
                 <MarkdownEditor />
             </section>
         </main>
