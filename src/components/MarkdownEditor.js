@@ -21,13 +21,16 @@ export default class MarkdownEditor extends Component {
   
     render() {
       return (
-        <div className="App">
-          <h1>Markdown Editor</h1>
-          <h2>Input</h2>
-          <p>Enter some markdown</p>
-          <textarea id="markdown-content" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
-          <h2>Output</h2>
-          <div className="content" dangerouslySetInnerHTML={this.getRawMarkup()} />
+        <div className="md-editor">
+          <div className="md-input">
+            <strong>Input</strong>
+            <p>Enter some markdown</p>
+            <textarea id="markdown-content" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
+          </div>
+          <div className="md-output">
+            <strong>Output</strong>
+            <div className="content" dangerouslySetInnerHTML={this.getRawMarkup()} />
+          </div>
         </div>
       );
     }
