@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from "./Header"
-import MarkdownEditor from "./MarkdownEditor"
+import Main from "./Main"
 import Footer from "./Footer"
 
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
         <div>
             <Header />
-            <MarkdownEditor />
+            <Main />
             <Footer />
         </div>
     );
