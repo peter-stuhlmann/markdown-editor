@@ -11,9 +11,9 @@ export default class Footer extends Component {
                 </p>
                 <nav className="footernav">
                     <ul id="menu-footer" className="menu">
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="https://github.com/peter-stuhlmann/">Github</a></li>
+                        <li><a href="./impressum.html">Impressum</a></li>
+                        <li><a href="./datenschutzerklaerung.html">Datenschutzerklärung</a></li>
                     </ul>
                 </nav>
             </div>
