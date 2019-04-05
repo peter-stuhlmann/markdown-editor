@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Header from "./Header"
 import MarkdownEditor from "./MarkdownEditor"
 
 class App extends Component {
   render() {
     return (
-        <MarkdownEditor />
+        <div>
+            <Header />
+            <MarkdownEditor />
+        </div>
     );
   }
 }
