@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import MarkdownIntro from "./MarkdownIntro"
 import MarkdownEditor from "./MarkdownEditor"
+import MarkdownIntro from "./MarkdownIntro"
+import ShareButtons from "./ShareButtons"
 
 
 export default class Main extends Component {
@@ -11,6 +12,7 @@ export default class Main extends Component {
             <section className="content clearfix">
                 <MarkdownEditor />
                 <MarkdownIntro />
+                <ShareButtons />                
             </section>
         </main>
       );

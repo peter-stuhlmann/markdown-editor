@@ -1,0 +1,47 @@
+/* -----------------------------------------------
+    SOCIAL MEDIA SHARE BUTTONS
+----------------------------------------------- */
+
+.sharebuttons {
+    border-top: 1px solid #eee;
+    margin: calc(#{$margin} * 2.6) 0 calc(#{$margin} * 2) 0;
+    padding-bottom: calc(#{$padding} * 2);
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-family: $primaryFont;
+        border-radius: $borderRadius;
+        color: #777;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.11);
+        line-height: 23px;
+        padding: 1px 8px;
+        margin: 3px;
+        transition: 0.2s ease all;
+
+        @media screen and (max-width: $tablet) {
+            padding: 5px 11px;
+
+            span:last-child {
+                display: none;
+            }
+
+            &:hover span {
+                display: inline-block
+            }
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #bdbdbd;
+
+            @media screen and (max-width: $tablet) {
+                color: #777;
+                background-color: #f8f8f8
+            }
+        }
+    }
+}
