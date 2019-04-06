@@ -1,0 +1,39 @@
+.md-editor {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    .md-input,
+    .md-output {
+        flex: 0 0 49%
+    }
+
+    .unconverted-text {
+        width: 100%;
+        height: 500px;
+        margin: 0px;
+        border: 1px solid $secondaryColor;
+        font-family: $primaryFont;
+        font-size: 1em;
+        padding: $padding;
+        resize: none;
+        overflow: auto;
+        box-sizing: border-box
+    }
+
+    .converted-text {
+        width: 100%;
+        margin: 0px;
+        border: 1px solid $secondaryColor;
+        font-family: $primaryFont;
+        font-size: 1em;
+        padding: $padding;
+        box-sizing: border-box;
+        height: 500px;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $primaryFont;
+            text-align: left
+        }
+    }
+}

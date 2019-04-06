@@ -24,12 +24,13 @@ export default class MarkdownEditor extends Component {
         <div className="md-editor">
           <div className="md-input">
             <strong>Input</strong>
-            <p>Enter some markdown</p>
-            <textarea id="markdown-content" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
+            <p>Gebe hier Text mit Markdown-Syntax ein:</p>
+            <textarea className="unconverted-text" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
           </div>
           <div className="md-output">
             <strong>Output</strong>
-            <div className="content" dangerouslySetInnerHTML={this.getRawMarkup()} />
+            <p>Formatiertes Ergebnis Deiner Eingabe:</p>
+            <div className="converted-text" dangerouslySetInnerHTML={this.getRawMarkup()} />
           </div>
         </div>
       );
