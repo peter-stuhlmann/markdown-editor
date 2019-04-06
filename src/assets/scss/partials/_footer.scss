@@ -1,0 +1,53 @@
+footer {
+    background-color: $tertiaryColor;
+    margin-top: calc(#{$margin} * 2);
+    box-sizing: border-box;
+
+    p {
+        margin: 0;
+        padding: 0 $padding;
+        display: inline-block
+    }
+}
+
+#footer {
+    color: $secondaryColor;
+    font-size: 0.85em;
+    line-height: 1.6;
+    padding: calc(#{$padding} * 1.7) $padding;
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    p {
+        padding: 0
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondaryColor;
+        transition: 0.3s ease all;
+
+        &:hover {
+            opacity: 0.8
+        }
+    }
+
+    nav {
+        display: inline-block;
+        text-align: center;
+        float: right;
+
+        li {
+            display: inline;
+            font-size: 1em;
+            margin-left: calc(#{$margin} * 1.7);
+            white-space: nowrap
+        }
+
+        a {
+            color: $secondaryColor
+        }
+    }
+}
