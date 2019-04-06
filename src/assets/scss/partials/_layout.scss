@@ -1,0 +1,140 @@
+body {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    color: $secondaryColor;
+    font-family: $primaryFont;
+    text-align: justify;
+    background-color: $primaryColor;
+
+
+    /* --- links --- */
+
+    a {
+        color: $secondaryColor;
+        text-decoration: none;
+        transition: 0.2s ease all
+    }
+
+
+    /* --- paragraphs --- */
+
+    p {
+        margin: $margin 0
+    }
+
+
+    /* --- headings --- */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $secondaryFont;
+        font-weight: normal;
+        margin: calc(#{$margin} * 4) 0 calc(#{$margin} * 2);
+        text-align: left;
+        line-height: 1.1
+    }
+
+    h1 {
+        clear: both;
+        font-size: 4em;
+        line-height: 1.35;
+        margin: 0 0 $margin;
+        text-align: center
+    }
+
+    h2 {
+        font-size: 2.6em
+    }
+
+    h3 {
+        font-size: 1.6em
+    }
+
+    h4 {
+        font-size: 1.3em
+    }
+
+    h5 {
+        font-size: 1.1em
+    }
+
+    h6 {
+        font-size: 1em
+    }
+
+
+    /* --- ordered and unordered lists --- */
+
+    ul,
+    ol {
+        margin: 0 0 $margin calc(#{$margin} * 2);
+        padding: 0
+    }
+
+    li {
+        list-style-type: square
+    }
+
+
+    /* --- clearfix --- */
+
+    .clearfix:before,
+    .clearfix:after {
+        content: "";
+        display: table;
+        line-height: 0
+    }
+
+    .clearfix:after {
+        clear: both
+    }
+
+
+    /* --- content --- */
+
+    #content {
+        background-color: $primaryColor;
+        line-height: 1.6;
+        width: 100%;
+        margin: 0;
+        padding: $padding;
+        box-sizing: border-box
+    }
+
+
+    /* --- wrap --- */
+
+    .wrap {
+        margin: 0 auto;
+        width: 100%;
+        max-width: $desktop;
+        padding: 0 $padding;
+        box-sizing: border-box
+    }
+
+
+    /* --- images --- */
+
+    img {
+        margin: 0 0 calc(#{$margin} / 1.5) 0;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle
+    }
+
+
+    /* --- hr --- */
+
+    hr {
+        margin: calc(#{$margin} * 2) 0;
+
+        &.short {
+            margin: calc(#{$margin} * 2) 40%
+        }
+    }
+}
