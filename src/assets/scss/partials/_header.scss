@@ -1,0 +1,34 @@
+#header {
+    background-color: $primaryColor;
+    margin: 0;
+    width: 100%
+}
+
+#logo {
+    line-height: 1.2;
+    margin: calc(#{$margin} * 3) $margin calc(#{$margin} * 4) $margin;
+    text-align: center
+}
+
+#site-title {
+    display: block;
+    text-align: center;
+    font-size: 5.5em;
+    letter-spacing: inherit;
+    font-family: $secondaryFont;
+    margin: 0;
+    padding: 0;
+    color: $secondaryColor;
+    text-decoration: none;
+
+    span {
+        color: hotpink
+    }
+}
+
+#site-description {
+    color: $secondaryColor;
+    font-size: 2.4em;
+    margin: $margin 0 0;
+    font-family: $secondaryFont
+}
