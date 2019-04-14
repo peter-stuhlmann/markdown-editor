@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class MainNavigation extends Component {
   
     render() {
@@ -12,10 +11,9 @@ export default class MainNavigation extends Component {
   
             <nav id="mainnav" className="mainnav">
                 <ul>
-                    <li><a href="#">Link I</a></li>
-                    <li><a href="#">Link II</a></li>
-                    <li><a href="#">Link III</a></li>
-                    <li><a href="#">Link IV</a></li>
+                    <li><a href="/">Was ist Markdown?</a></li>
+                    <li><a href="/editor">Editor</a></li>
+                    <li><a href="/syntax">Syntax</a></li>
                 </ul>
             </nav>
 
