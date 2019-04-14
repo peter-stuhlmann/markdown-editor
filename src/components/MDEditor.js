@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import Header from "./Header"
-import Main from "./Main"
 import Footer from "./Footer"
 import ReactMetaTags from "./MetaTags"
+import MarkdownIntro from './MarkdownIntro'
+import MarkdownEditor from './MarkdownEditor'
+import MarkdownSyntax from "./MarkdownSyntax"
+
 
 
 class MDEditor extends Component {
   render() {
     return (
-        <div>
+        <Router>
             <ReactMetaTags />
             <Header />
-            <Main />
+            <Route exact path="/" component={ MarkdownIntro } />
+            <Route path="/editor" component={ MarkdownEditor } />
+            <Route path="/syntax" component={ MarkdownSyntax } />            
             <Footer />
-        </div>
+        </Router>
     );
   }
 }
