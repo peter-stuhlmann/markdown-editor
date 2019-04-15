@@ -15,9 +15,13 @@ class MDEditor extends Component {
         <Router>
             <ReactMetaTags />
             <Header />
-            <Route exact path="/" component={ MarkdownIntro } />
-            <Route path="/editor" component={ MarkdownEditor } />
-            <Route path="/syntax" component={ MarkdownSyntax } />            
+            <main className="wrap">
+              <section className="content clearfix">
+                <Route exact path="/" component={ MarkdownIntro } />
+                <Route path="/editor" component={ MarkdownEditor } />
+                <Route path="/syntax" component={ MarkdownSyntax } />
+              </section>
+            </main>            
             <Footer />
         </Router>
     );
