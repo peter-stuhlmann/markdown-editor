@@ -36,7 +36,7 @@ export default class MarkdownEditor extends Component {
             </div>
           </div>
           <ShareButtons />
-        <React.Fragement />
+        </React.Fragment>
       );
     }
 
