@@ -4,9 +4,9 @@ export default class MainNavigation extends Component {
   
     render() {
       return (
-          <div>
+          <React.Fragment>
             <a href="#mainnav" className="mainnav-toggle">
-                MENU
+                <span className="fas fa-bars"></span>
             </a>
   
             <nav id="mainnav" className="mainnav">
@@ -18,7 +18,7 @@ export default class MainNavigation extends Component {
             </nav>
 
             <a href="#" className="backdrop"></a>
-          </div>
+          </React.Fragment>
       );
     }
 
