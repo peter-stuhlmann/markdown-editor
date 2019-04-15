@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Remarkable from 'remarkable';
+import ShareButtons from "./ShareButtons"
 
 export default class MarkdownEditor extends Component {
 
@@ -21,18 +22,21 @@ export default class MarkdownEditor extends Component {
   
     render() {
       return (
-        <div className="md-editor">
-          <div className="md-input">
-            <strong>Input</strong>
-            <p>Gebe hier Text mit Markdown-Syntax ein:</p>
-            <textarea className="unconverted-text" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
+        <React.Fragment>
+          <div className="md-editor">
+            <div className="md-input">
+              <strong>Input</strong>
+              <p>Gebe hier Text mit Markdown-Syntax ein:</p>
+              <textarea className="unconverted-text" onChange={this.handleChange} defaultValue={this.state.value}></textarea>
+            </div>
+            <div className="md-output">
+              <strong>Output</strong>
+              <p>Formatiertes Ergebnis Deiner Eingabe:</p>
+              <div className="converted-text" dangerouslySetInnerHTML={this.getRawMarkup()} />
+            </div>
           </div>
-          <div className="md-output">
-            <strong>Output</strong>
-            <p>Formatiertes Ergebnis Deiner Eingabe:</p>
-            <div className="converted-text" dangerouslySetInnerHTML={this.getRawMarkup()} />
-          </div>
-        </div>
+          <ShareButtons />
+        <React.Fragement />
       );
     }
 
